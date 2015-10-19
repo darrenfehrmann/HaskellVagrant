@@ -1,10 +1,11 @@
-Elixir VM
-=========
+Haskell VM
+==========
 
 Overview
 --------
 
-Sets up an Ubuntu box with [Elixir](http://elixir-lang.org/) installed.
+Sets up an Ubuntu box with [Haskell](http://haskell.org/) installed using the instructions from 
+[bitymyapp/learnhaskell](https://github.com/bitemyapp/learnhaskell/blob/master/install.md)
 
 Prerequisites
 -------------
