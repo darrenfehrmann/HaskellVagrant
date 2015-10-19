@@ -5,7 +5,7 @@ Overview
 --------
 
 Sets up an Ubuntu box with [Haskell](http://haskell.org/) installed using the instructions from 
-[bitymyapp/learnhaskell](https://github.com/bitemyapp/learnhaskell/blob/master/install.md)
+[biteymyapp/learnhaskell](https://github.com/bitemyapp/learnhaskell/blob/master/install.md).
 
 Prerequisites
 -------------
