@@ -1,0 +1,22 @@
+- name: install haskell
+  hosts: default
+  sudo: True
+  tasks:
+    - name: upgrade all packages
+      apt: upgrade=dist update_cache=yes
+    - name: install git
+      apt: name=git update_cache=yes
+    - name: install software-properties-common
+      apt: name=software-properties-common update_cache=yes
+    - name: add ghc repository
+      apt_repository: repo='ppa:hvr/ghc'
+    - name: install cabal
+      apt: name=cabal-install-1.22 update_cache=yes
+    - name: install ghc
+      apt: name=ghc-7.8.4 update_cache=yes
+    - name: install happy
+      apt: name=happy-1.19.5 update_cache=yes
+    - name: install alex
+      apt: name=alex-3.1.4 update_cache=yes
+    - name: create .bashrc
+      template: src=templates/bash_profile.j2 dest=/home/vagrant/.bash_profile mode=0755
